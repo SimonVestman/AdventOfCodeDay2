@@ -1,15 +1,9 @@
-/*
-Advent of code Day 1
-2019-12-05
- */
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Dag1 {
+public class Day1Part2 {
     public static void main(String[] args) {
-
         //part 1
         Scanner in = null;
         try {
@@ -20,21 +14,15 @@ public class Dag1 {
 
         double fuel = 0;
         double fuelrounden;
-        double totalfuel= 0;
+        double totalfuel = 0;
+        double fuelrounded2;
 
         while (in.hasNext()) {
             double modeulMass = in.nextInt();
             fuel = (modeulMass / 3) - 2;
             fuelrounden = Math.floor(fuel);
-            /*System.out.println("modeulmass:" + modeulMass + "\n" +
-                    "rounden fuel: "+ fuelrounden +
-                    "\n" + "not rounden: " + fuel + "\n");*/
-            totalfuel= totalfuel + fuelrounden;
+
         }
-        System.out.println("The total amount of fuel is: " + totalfuel);
-
-        //part 2
-
+        System.out.println(totalfuel);
     }
 }
-
